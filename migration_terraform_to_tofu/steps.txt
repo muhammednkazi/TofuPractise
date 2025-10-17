@@ -1,0 +1,15 @@
+Migration from terraform to tofu:-
+Open the folder where your terraform files resides
+ensure no changes are there in terraform plan
+backup state file
+install opentofu
+tofu plan
+make a small change and tofu apply
+done you have migrated to opentofu.
+
+Rollback from tofu to terraform processs:-
+backup your state file
+run terraform init
+terraform plan
+make a small change and terraform apply
+done you have migrated to terraform.
