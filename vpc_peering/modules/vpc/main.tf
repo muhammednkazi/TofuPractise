@@ -27,13 +27,13 @@ resource "aws_subnet" "public" {
 }
 
 # --- Private Subnet ---
-resource "aws_subnet" "private" {
+/*resource "aws_subnet" "private" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = var.private_subnet_cidr
   availability_zone       = var.availability_zone_b
   map_public_ip_on_launch = false
   tags = { Name = "${var.name}-private-subnet" }
-}
+}*/
 
 # --- Public Route Table ---
 resource "aws_route_table" "public" {
@@ -52,7 +52,7 @@ resource "aws_route_table_association" "public_assoc" {
   route_table_id = aws_route_table.public.id
 }
 
-# --- NAT Gateway for Private Subnet ---
+/*# --- NAT Gateway for Private Subnet ---
 resource "aws_eip" "nat" {
   domain = "vpc"
 }
@@ -80,5 +80,6 @@ resource "aws_route_table_association" "private_assoc" {
   subnet_id      = aws_subnet.private.id
   route_table_id = aws_route_table.private.id
 }
+*/
 
 
