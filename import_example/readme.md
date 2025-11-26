@@ -73,3 +73,6 @@ copy those parameters and values from state file and paste in resource block of 
 run tofu plan
 
 o/p:-Your insfrasturce is uptodate.
+
+In 1st method, main.tf file will have all configuration of the instance.
+in 2nd method, main.tf file will have only mandatory configuration of instance that we will add manually.
