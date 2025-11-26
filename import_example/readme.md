@@ -1,6 +1,6 @@
 tofu import:-
 
-Suppose an ec2 instance is already created on aws console with using tofu.
+Suppose an ec2 instance is already created on aws console without using tofu.
 
 Now, we have to import this ec2 into our tofu code and statefile so to manage it using tofu and not from aws console.
 
