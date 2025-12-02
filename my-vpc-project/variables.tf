@@ -1,9 +1,9 @@
 variable "region" {
-  default = "ap-south-1"
+  #default = "ap-south-1"
 }
 
 variable "project_name" {
-  default = "demo-vpc"
+  #default = "demo-vpc"
 }
 
 variable "ami" {
@@ -16,5 +16,5 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "TofuPractise"
+  description = "key name"
 }
