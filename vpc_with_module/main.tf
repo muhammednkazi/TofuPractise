@@ -24,6 +24,7 @@ module "vpc" {
   availability_zone_b = "ap-south-1b"
 }
 
+
 # --- EC2 MODULE ---
 module "ec2" {
   source             = "./modules/ec2"
